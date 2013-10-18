@@ -1,0 +1,10 @@
+debug: EX1.ASM
+	ML /Zi /W3 /WX EX1.ASM /Fe EX1_D.EXE
+release: EX2_1.ASM
+	ML /W3 /WX EX1.ASM /Fe EX1.EXE
+clean:
+	del *.EXE
+	del *.OBJ
+	del *.BAK
+cv:
+	cv /s EX1_D.EXE
